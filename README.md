@@ -27,7 +27,7 @@ dependencies {
 }
 ```
 ## ScreenShots 
-![](Images/Jlogger.gif)
+![](images/Jlogger.gif)
 
 
 ## ❔ Usage
