@@ -26,7 +26,31 @@ public class MainActivity extends LoggerUI {
             while (i-- > 0) {
                 try {
                     Thread.sleep(1000);
-                    getLoggerViewModel().insert(new Logger(Logger.DEBUG, "MESSAGE " + i, new Date()));
+                    getLoggerViewModel().insert(new Logger(Logger.DEBUG, "Error " + i, new Date()));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
+        new Thread(() -> {
+            int i = 3;
+            while (i-- > 0) {
+                try {
+                    Thread.sleep(1000);
+                    getLoggerViewModel().insert(new Logger(Logger.INFO, "Info " + i, new Date()));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
+        new Thread(() -> {
+            int i = 2;
+            while (i-- > 0) {
+                try {
+                    Thread.sleep(1000);
+                    getLoggerViewModel().insert(new Logger(Logger.OTHER, "Hello World " + i, new Date()));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

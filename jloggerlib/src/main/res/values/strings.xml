@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">Logify</string>
+    <string name="app_name">jLogger</string>
     <string name="search">Search</string>
+    <string name="asc">ASC</string>
 </resources>

@@ -64,7 +64,9 @@
         android:layout_height="36dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
-        android:text="ASC"
+        android:text="@string/asc"
+        android:trackTint="@color/black"
+        android:backgroundTintMode="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/activity_main_spinner"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
