@@ -1,0 +1,3 @@
+include ':jloggerlib'
+include ':app'
+rootProject.name = "JLoggerApplication"
